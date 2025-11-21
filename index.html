@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introduction to Artificial Intelligence — Dr. Samarth Godara</title>
+  <style>
+    :root{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#222}
+    body{margin:0;line-height:1.5;background:#f7f7f8}
+    .banner{background:#0b5cff;color:#fff;padding:20px 50px;display:flex;align-items:center;gap:16px}
+    .banner img{width:100px;object-fit:contain;border-radius:8px;background:#fff;padding:2px}
+    .banner h1{margin:0;font-size:40px}
+    .container{max-width:1200px;margin:28px auto;padding:0 16px}
+    .meta{background:#fff;padding:18px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+    .meta p{margin:8px 0}
+    .course-table{width:100%;border-collapse:collapse;margin-top:18px;background:#fff;border-radius:8px;overflow:hidden}
+    .course-table thead{background:#f0f4ff}
+    .course-table th, .course-table td{padding:10px 12px;border-bottom:1px solid #eee;text-align:left;font-size:14px}
+
+    /* Adjust specific column widths */
+    .course-table th:nth-child(4),
+    .course-table td:nth-child(4) {
+        width: 28%;   /* Problem column — reduce width */
+    }
+
+    .course-table th:nth-child(6),
+    .course-table td:nth-child(6) {
+        width: 25%;   /* Download column — increase width */
+    }
+
+    .actions a{display:inline-block;margin:6px;padding:6px 8px;border-radius:6px;text-decoration:none;font-size:13px;border:1px solid grey}
+    .watch{background:lightgreen}
+    .download{background:lightblue}
+    @media (max-width:720px){
+      .banner{flex-direction:column;align-items:flex-start}
+      .banner img{width:56px;height:56px}
+      .course-table th:nth-child(1), .course-table td:nth-child(1){display:none}
+    }
+  </style>
+</head>
+<body>
+  <header class="banner">
+    <img src="intro_to_ai_logo.png" alt="Course logo" />
+    <div>
+      <h1>Introduction to Artificial Intelligence</h1>
+      <div style="font-size:20px;opacity:0.95">Dr. Samarth Godara, ICAR–IASRI, New Delhi, India</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="meta">
+      <p>This course introduces students to the fundamental concepts of artificial intelligence and familiarizes them with a variety of problems that can be addressed using AI techniques. Practical sessions are designed to run on low-configuration computers so students can gain hands-on experience through accessible coding exercises.</p>
+      <p>All course materials — including video lectures, presentations, source code, and datasets — are freely available to students.</p>
+    </section>
+
+    <section>
+      <table class="course-table" aria-label="Course Contents">
+        <thead>
+          <tr>
+            <th>Lect. No.</th>
+            <th>Topic</th>
+            <th>Algorithms</th>
+            <th>Problem</th>
+            <th>Watch</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Regression</td>
+            <td>Linear Regression</td>
+            <td>Predicting the Wheat Yield - using Daily Avg. Min. Temperature</td>
+            <td class="actions"><a class="watch" href="https://drive.google.com/file/d/1DvgadehadqxhLGRu5otsqjepOXhYNweg/view?usp=drive_link" target="_blank">Video</a></td>
+            <td class="actions"><a class="download" href="https://drive.google.com/file/d/1mdLQX4AGCtowMB9olROUGr9pe7LEMRsY/view?usp=drive_link" target="_blank">Presentation</a> <a class="download" href="https://colab.research.google.com/drive/18fwAhrdNDn4U2sk_z6iJJ06jpj0wtd4I?usp=drive_link" target="_blank">Code</a> <a class="download" href="https://drive.google.com/file/d/165MC90qlcrFUO2ehpNycvOVa3B0J1qeu/view?usp=drive_link" target="_blank">Dataset</a></td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Regression</td>
+            <td>Multiple Linear Regression</td>
+            <td>Predicting Wheat Yield - using Min, Max Temp and Rainfall</td>
+            <td class="actions"><a class="watch" href="https://drive.google.com/file/d/1NlYeRRja7hnq6AcVF2rEEvMTCtuwIC1B/view?usp=drive_link" target="_blank">Video</a></td>
+            <td class="actions"><a class="download" href="https://drive.google.com/file/d/1tHLXMDQfEyAuVG2kJBdIOT4BfK2d0jkj/view?usp=drive_link" target="_blank">Presentation</a> <a class="download" href="https://colab.research.google.com/drive/1APsQZl0dxB3wzOJOKGj_JnwWOQIRvMT6?usp=drive_link" target="_blank">Code</a> <a class="download" href="https://drive.google.com/file/d/1HoMtmzEf_c_VRf-xs_I2vxAJu7JE9bh9/view?usp=drive_link" target="_blank">Dataset</a></td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Optimization</td>
+            <td>Genetic Algorithm</td>
+            <td>Optimal Crop Allocation Plan, Finding the best coefficient values for the regression equation</td>
+            <td class="actions"><a class="watch" href="https://drive.google.com/file/d/1jtOzu1z7qogCJ4qy_eTieoJnOGYne_bB/view?usp=drive_link" target="_blank">Video</a></td>
+            <td class="actions"><a class="download" href="https://drive.google.com/file/d/1iPOrN-Rp6yhsA4aPmilIQX7PG_YLUf7f/view?usp=drive_link" target="_blank">Presentation</a> <a class="download" href="https://colab.research.google.com/drive/1_LyTBT0_NcOJ88_zBIs93s8JJcIK0Itj?usp=drive_link" target="_blank">Code 1</a> <a class="download" href="https://colab.research.google.com/drive/1zpNQeyTO0YI08wdeYkcQWP-DL5qEnqi6?usp=drive_link" target="_blank">Code 2</a></td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Optimization</td>
+            <td>Particle Swarm Optimization</td>
+            <td>Rectangle Packing Problem, Finding the best coefficient values for the regression equation</td>
+            <td class="actions"><a class="watch" href="https://drive.google.com/file/d/1tPjUFZow0bJrnelJ6WKvAPrVzrCXnyla/view?usp=drive_link" target="_blank">Video</a></td>
+            <td class="actions"><a class="download" href="https://drive.google.com/file/d/14J1Np2VAHs22A-QnufKWWHyLW7AjqOmD/view?usp=drive_link" target="_blank">Presentation</a> <a class="download" href="https://colab.research.google.com/drive/1lQT4BUn8oVT3pUZo74UpztZQVB_qaprU?usp=drive_link" target="_blank">Code 1</a> <a class="download" href="https://colab.research.google.com/drive/1WC4LpQDKOPhdJFPvfIpJ61HvdbPYGO-4?usp=drive_link" target="_blank">Code 2</a></td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>Regression</td>
+            <td>Artificial Neural Networks</td>
+            <td>Predicting Wheat Yield - using Min, Max Temp and Rainfall</td>
+            <td class="actions"><a class="watch" href="https://drive.google.com/file/d/1vhIXRC0zjLVxVLqBAjcB2SNjkzp6kge4/view?usp=drive_link" target="_blank">Video</a></td>
+            <td class="actions"><a class="download" href="https://drive.google.com/file/d/1o0flBtAQcTqJOJ-xXbv59Qh8uOlZMZu1/view?usp=drive_link" target="_blank">Presentation</a> <a class="download" href="https://colab.research.google.com/drive/1tdFnJLx0QXg3JpGzeXn3FP0bn380eJtE?usp=drive_link" target="_blank">Code</a></td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td>Regression</td>
+            <td>K-Nearest Neighbours, Decision Trees, Random Forest</td>
+            <td>Predicting Wheat Yield - using Min, Max Temp and Rainfall</td>
+            <td class="actions"><a class="watch" href="https://drive.google.com/file/d/1FeT4g_UMOmc4dkuIWrhkFQGGdQXt3zOd/view?usp=drive_link" target="_blank">Video</a></td>
+            <td class="actions"><a class="download" href="https://drive.google.com/file/d/1D-beu4tXR1yV7PA_j6OYjD4k4_nYHBaI/view?usp=drive_link" target="_blank">Presentation</a> <a class="download" href="https://colab.research.google.com/drive/1tOXdP45PrtV4NjlRRJ_PuTHIFHGhKhW7?usp=drive_link" target="_blank">Code</a></td>
+          </tr>
+
+          <tr>
+            <td>7</td>
+            <td>Classification</td>
+            <td>Decision Tree Classification</td>
+            <td>Predicting Wheat Yield Level - using Min, Max Temp and Rainfall</td>
+            <td class="actions"><a class="watch" href="https://drive.google.com/file/d/1FHnXXuULhOE8GaIJR6hFkc4EJPKpdSpK/view?usp=drive_link" target="_blank">Video</a></td>
+            <td class="actions"><a class="download" href="https://drive.google.com/file/d/1sq8OoVjnXJOCHM7ywBxTXh9Vk4HGJ0lv/view?usp=drive_link" target="_blank">Presentation</a> <a class="download" href="https://colab.research.google.com/drive/1eacj_Sk_aCoXSLqw4TS4xCb8a9YSmyC5?usp=drive_link" target="_blank">Code</a></td>
+          </tr>
+
+          <tr>
+            <td>8</td>
+            <td>Image Classification</td>
+            <td>Convolutional Neural Network</td>
+            <td>Classifying Healthy / Non-Healthy Tomato Leaves</td>
+            <td class="actions"><a class="watch" href="https://drive.google.com/file/d/1CSpC2TUeV1IyxyvhsR80Mf1XLpXcdxrh/view?usp=drive_link" target="_blank">Video</a></td>
+            <td class="actions"><a class="download" href="https://drive.google.com/file/d/1mE73-w7M0JhcwWk88UZPqmRs0iLdIO-T/view?usp=drive_link" target="_blank">Presentation</a> <a class="download" href="https://drive.google.com/drive/folders/1BaiqtUHih0QLdfvSeerEZ5COe1gIVKN8?usp=drive_link" target="_blank">Code</a> <a class="download" href="https://drive.google.com/drive/folders/1B9DlmskxJGILVkafNVSpH4sion3eyUc0?usp=drive_link" target="_blank">Dataset</a></td>
+          </tr>
+
+          <tr>
+            <td>9</td>
+            <td>Time Series Forecasting</td>
+            <td>Recurrent Neural Networks</td>
+            <td>Forecasting number of farmers’ query calls in the call center</td>
+            <td class="actions"><a class="watch" href="https://drive.google.com/file/d/1oELXgTEwl9z-_puGMWlhBSdlq20YI3xU/view?usp=drive_link" target="_blank">Video</a></td>
+            <td class="actions"><a class="download" href="https://drive.google.com/file/d/1Hdtb1p7zMf5HV5dlw5ywN6McGkyU-R-7/view?usp=drive_link" target="_blank">Presentation</a> <a class="download" href="https://colab.research.google.com/drive/13iQaJvzk6gYzK6p7rPUEORyf9KLl2unm?usp=drive_link" target="_blank">Code</a> <a class="download" href="https://drive.google.com/file/d/1jUCYVEfNwoaqCRTl-xWpddVa5JMZccpk/view?usp=drive_link" target="_blank">Dataset</a></td>
+          </tr>
+
+          <tr>
+            <td>10</td>
+            <td>Clustering</td>
+            <td>K-Means, DBSCAN</td>
+            <td>Clustering Districts based on wheat yield</td>
+            <td class="actions"><a class="watch" href="https://drive.google.com/file/d/1OHWWyvrgOfONcnyjOL3As5qc-mnPOBQw/view?usp=drive_link" target="_blank">Video</a></td>
+            <td class="actions"><a class="download" href="https://drive.google.com/file/d/1QeReOHLgfwpYElI4SU0tIkVLYNGIO8Kv/view?usp=drive_link" target="_blank">Presentation</a> <a class="download" href="https://colab.research.google.com/drive/14-JuBIntLaV53elfUTMrQNC4lrAfOqCj?usp=drive_link" target="_blank">Code</a> <a class="download" href="https://drive.google.com/drive/folders/1hG1dLyd557CjkRlOO59Vi1jcMDPiXAYS?usp=drive_link" target="_blank">Dataset</a></td>
+          </tr>
+
+          <tr>
+            <td>11</td>
+            <td>Association Rule Mining</td>
+            <td>Apriori Algorithm</td>
+            <td>Finding the association between the levels of rainfall, min & max temp and wheat yield</td>
+            <td class="actions"><a class="watch" href="https://drive.google.com/file/d/1-qxhGr22CrzrMRhEUpTKyVdY-Jw0Lyb4/view?usp=drive_link" target="_blank">Video</a></td>
+            <td class="actions"><a class="download" href="https://drive.google.com/file/d/1Yt3Qvemi5iWg9V-P5Uxa2dnmYtkgjNmU/view?usp=drive_link" target="_blank">Presentation</a> <a class="download" href="https://colab.research.google.com/drive/1klEWiX2ZVTOucxfNTFQvszU8M0HllEaX?usp=drive_link" target="_blank">Code</a> <a class="download" href="https://drive.google.com/file/d/1nYCDW-5jGUrW_fKS92yqTncFQjn5incu/view?usp=drive_link" target="_blank">Dataset</a></td>
+          </tr>
+
+          <tr>
+            <td>12</td>
+            <td>State Space Search</td>
+            <td>Breadth First Search</td>
+            <td>Finding the optimal path for Harvester</td>
+            <td class="actions"><a class="watch" href="https://drive.google.com/file/d/1_paPCq2VVkudBVMAbXZmr6NVC0gAzGKq/view?usp=drive_link" target="_blank">Video</a></td>
+            <td class="actions"><a class="download" href="https://drive.google.com/file/d/1TUtgmTduoa8TqchRy0SQIlS5wlX9k2s-/view?usp=drive_link" target="_blank">Presentation</a> <a class="download" href="https://colab.research.google.com/drive/1NC6J3DZRZOHDfbQqJOuS_uNHJ8x4brdz?usp=drive_link" target="_blank">Code 1</a> <a class="download" href="https://drive.google.com/file/d/1LGh4-hfxixfVzvetuSAoYhSQhURXOHVY/view?usp=drive_link" target="_blank">Code 2</a></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </section>
+
+    <p style="font-size:13px;color:#666;margin-top:12px">Note: The datasets and other materials used in this course are publicly available and have been utilized solely for educational purposes. The primary objective of this course is to provide students with a self-learning resource that offers comprehensive exposure to fundamental techniques in Artificial Intelligence.</p>
+
+<p style="font-size:13px;color:#666;margin-top:12px">We dedicate this work to the unseen force that surrounds us—the vital energy underlying all that exists and all that is yet to be.</p>
+  </main>
+</body>
+</html>
