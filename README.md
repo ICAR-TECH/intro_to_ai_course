@@ -1,7 +1,7 @@
 # Introduction to Artificial Intelligence
 ## Dr. Samarth Godara, ICAR–IASRI, New Delhi, India
 
-## Course Page: 
+## Course Page: https://icar-tech.github.io/intro_to_ai_course/
 
 This course aims to familiarize students with the core principles of artificial intelligence and introduce them to a wide range of problem types that can be effectively addressed using AI methodologies.
 
